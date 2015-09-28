@@ -12,6 +12,7 @@ class Devise::RegistrationsController < DeviseController
 
   # POST /resource
   def create
+    p "xxx #{sign_up_params}"
     build_resource(sign_up_params)
 
     resource.save
